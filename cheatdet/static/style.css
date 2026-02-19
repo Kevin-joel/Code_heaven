@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #000000, #111111, #b8860b, #000000);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 25px #b8860b;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #b8860b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.exam-container {
+    padding: 30px;
+    text-align: center;
+}
+
+.camera-box video {
+    width: 400px;
+    border-radius: 10px;
+    border: 3px solid #b8860b;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.status.warning {
+    background: orange;
+    color: black;
+}
+
+.status.terminate {
+    background: red;
+}
+
+.status.normal {
+    background: green;
+}
+
+.logout {
+    color: #b8860b;
+    text-decoration: none;
+}
